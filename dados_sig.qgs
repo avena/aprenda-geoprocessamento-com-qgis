@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.40.7-Bratislava" saveDateTime="2025-06-30T18:06:25" saveUser="adminrandom" saveUserFull="adminrandom" projectname="">
+<qgis version="3.40.7-Bratislava" saveDateTime="2025-06-30T18:13:52" saveUser="adminrandom" saveUserFull="adminrandom" projectname="">
   <homePath path=""/>
   <title></title>
   <transaction mode="Disabled"/>
@@ -35,21 +35,26 @@
     <customproperties>
       <Option/>
     </customproperties>
-    <layer-tree-layer id="rodovias_d1729b07_3de2_4ce1_8612_85c626f8f385" name="rodovias" checked="Qt::Checked" legend_split_behavior="0" providerKey="ogr" expanded="1" legend_exp="" source="./aula09_shapefiles/rodovias.shp" patch_size="-1,-1">
+    <layer-tree-group name="camadas_base" checked="Qt::Checked" expanded="1" groupLayer="">
       <customproperties>
         <Option/>
       </customproperties>
-    </layer-tree-layer>
-    <layer-tree-layer id="aeroportos_f2f85b4e_71fe_4839_994c_c457d9985b48" name="aeroportos" checked="Qt::Checked" legend_split_behavior="0" providerKey="ogr" expanded="1" legend_exp="" source="./aula09_shapefiles/aeroportos.shp" patch_size="-1,-1">
-      <customproperties>
-        <Option/>
-      </customproperties>
-    </layer-tree-layer>
-    <layer-tree-layer id="municipios_ab79cc15_ee66_464a_9109_552d4f900aeb" name="municipios" checked="Qt::Unchecked" legend_split_behavior="0" providerKey="ogr" expanded="1" legend_exp="" source="./aula09_shapefiles/municipios.shp" patch_size="-1,-1">
-      <customproperties>
-        <Option/>
-      </customproperties>
-    </layer-tree-layer>
+      <layer-tree-layer id="rodovias_d1729b07_3de2_4ce1_8612_85c626f8f385" name="rodovias" checked="Qt::Checked" legend_split_behavior="0" providerKey="ogr" expanded="1" legend_exp="" source="./aula09_shapefiles/rodovias.shp" patch_size="-1,-1">
+        <customproperties>
+          <Option/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer id="aeroportos_f2f85b4e_71fe_4839_994c_c457d9985b48" name="aeroportos" checked="Qt::Checked" legend_split_behavior="0" providerKey="ogr" expanded="1" legend_exp="" source="./aula09_shapefiles/aeroportos.shp" patch_size="-1,-1">
+        <customproperties>
+          <Option/>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer id="municipios_ab79cc15_ee66_464a_9109_552d4f900aeb" name="municipios" checked="Qt::Checked" legend_split_behavior="0" providerKey="ogr" expanded="1" legend_exp="" source="./aula09_shapefiles/municipios.shp" patch_size="-1,-1">
+        <customproperties>
+          <Option/>
+        </customproperties>
+      </layer-tree-layer>
+    </layer-tree-group>
     <custom-order enabled="0">
       <item>aeroportos_f2f85b4e_71fe_4839_994c_c457d9985b48</item>
       <item>municipios_ab79cc15_ee66_464a_9109_552d4f900aeb</item>
@@ -68,10 +73,10 @@
   <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>degrees</units>
     <extent>
-      <xmin>-55.89563110919931432</xmin>
-      <ymin>-19.39271150777401687</ymin>
-      <xmax>-52.93236662487800004</xmax>
-      <ymax>-16.05627884323639165</ymax>
+      <xmin>-80.22627959841680934</xmin>
+      <ymin>-53.87350002828285511</ymin>
+      <xmax>-32.81404784927578078</xmax>
+      <ymax>-0.49057739568089431</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -92,21 +97,23 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer name="rodovias" checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="rodovias_d1729b07_3de2_4ce1_8612_85c626f8f385" isInOverview="0" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer name="aeroportos" checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="aeroportos_f2f85b4e_71fe_4839_994c_c457d9985b48" isInOverview="0" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer name="municipios" checked="Qt::Unchecked" open="true" showFeatureCount="0" drawingOrder="-1">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="municipios_ab79cc15_ee66_464a_9109_552d4f900aeb" isInOverview="0" visible="0"/>
-      </filegroup>
-    </legendlayer>
+    <legendgroup name="camadas_base" checked="Qt::Checked" open="true">
+      <legendlayer name="rodovias" checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile layerid="rodovias_d1729b07_3de2_4ce1_8612_85c626f8f385" isInOverview="0" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer name="aeroportos" checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile layerid="aeroportos_f2f85b4e_71fe_4839_994c_c457d9985b48" isInOverview="0" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer name="municipios" checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile layerid="municipios_ab79cc15_ee66_464a_9109_552d4f900aeb" isInOverview="0" visible="1"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
   </legend>
   <mapViewDocks/>
   <mapcanvas name="mAreaCanvas" annotationsVisible="1">
@@ -1883,7 +1890,7 @@
   <Sensors/>
   <ProjectViewSettings UseProjectScales="0" rotation="0">
     <Scales/>
-    <DefaultViewExtent xmax="-52.93236662487800004" xmin="-55.89563110919931432" ymin="-19.39271150777402042" ymax="-16.0562788432363881">
+    <DefaultViewExtent xmax="-23.39064679894296717" xmin="-89.64968064874962295" ymin="-53.87350002828285511" ymax="-0.49057739568089431">
       <spatialrefsys nativeFormat="Wkt">
         <wkt>GEOGCRS["SIRGAS 2000",DATUM["Sistema de Referencia Geocentrico para las AmericaS 2000",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["Latin America - Central America and South America - onshore and offshore. Brazil - onshore and offshore."],BBOX[-59.87,-122.19,32.72,-25.28]],ID["EPSG",4674]]</wkt>
         <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
@@ -1948,7 +1955,7 @@
       </spatialrefsys>
     </CoordinateCustomCrs>
   </ProjectDisplaySettings>
-  <ProjectGpsSettings destinationLayerSource="C:\Users\adminrandom\OneDrive\qgis\aprenda-geoprocessamento-com-qgis\aula09_shapefiles\aeroportos.shp" autoCommitFeatures="0" destinationLayerName="aeroportos" destinationLayerProvider="ogr" destinationFollowsActiveLayer="1" autoAddTrackVertices="0" destinationLayer="aeroportos_f2f85b4e_71fe_4839_994c_c457d9985b48">
+  <ProjectGpsSettings autoCommitFeatures="0" destinationFollowsActiveLayer="1" autoAddTrackVertices="0" destinationLayer="">
     <timeStampFields/>
   </ProjectGpsSettings>
 </qgis>
