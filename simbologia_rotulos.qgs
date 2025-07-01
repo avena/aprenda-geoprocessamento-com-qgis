@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUserFull="adminrandom" saveUser="adminrandom" saveDateTime="2025-07-01T08:23:15" projectname="" version="3.40.7-Bratislava">
+<qgis saveUserFull="adminrandom" saveUser="adminrandom" saveDateTime="2025-07-01T08:47:00" projectname="" version="3.40.7-Bratislava">
   <homePath path=""/>
   <title></title>
   <transaction mode="Disabled"/>
@@ -54,10 +54,10 @@
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>degrees</units>
     <extent>
-      <xmin>-73.81498611173856261</xmin>
-      <ymin>-34.46784549259439245</ymin>
-      <xmax>-31.41890278083719323</xmax>
-      <ymax>6.08833189959608134</ymax>
+      <xmin>-73.79552537402638279</xmin>
+      <ymin>-34.52622770573094613</ymin>
+      <xmax>-31.39944204312500631</xmax>
+      <ymax>6.029949686459533</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -375,7 +375,11 @@
           </symbol>
         </profileMarkerSymbol>
       </elevation>
-      <renderer-v2 referencescale="-1" type="singleSymbol" forceraster="0" symbollevels="0" enableorderby="0">
+      <renderer-v2 referencescale="-1" attr="TipoAero" type="categorizedSymbol" forceraster="0" symbollevels="0" enableorderby="0">
+        <categories>
+          <category type="string" symbol="0" uuid="{62dbc2f3-3a3e-42de-bd1c-3820af669c7d}" render="true" label="Internacional" value="Internacional"/>
+          <category type="string" symbol="1" uuid="{d06b7952-8c63-4e55-8fef-ce8a6ce17dc0}" render="true" label="Nacional" value="Nacional"/>
+        </categories>
         <symbols>
           <symbol type="marker" name="0" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0" is_animated="0">
             <data_defined_properties>
@@ -385,7 +389,87 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
-            <layer id="{8a059f3a-2845-4ddd-be20-e8e0dfb8a842}" class="SimpleMarker" pass="0" enabled="1" locked="0">
+            <layer id="{4ec77973-fbcf-49c5-84cb-3b3a824b9330}" class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <Option type="Map">
+                <Option type="QString" name="angle" value="0"/>
+                <Option type="QString" name="cap_style" value="square"/>
+                <Option type="QString" name="color" value="72,123,182,255,rgb:0.28235294117647058,0.4823529411764706,0.71372549019607845,1"/>
+                <Option type="QString" name="horizontal_anchor_point" value="1"/>
+                <Option type="QString" name="joinstyle" value="bevel"/>
+                <Option type="QString" name="name" value="circle"/>
+                <Option type="QString" name="offset" value="0,0"/>
+                <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+                <Option type="QString" name="offset_unit" value="MM"/>
+                <Option type="QString" name="outline_color" value="50,87,128,255,rgb:0.19607843137254902,0.3411764705882353,0.50196078431372548,1"/>
+                <Option type="QString" name="outline_style" value="no"/>
+                <Option type="QString" name="outline_width" value="0.4"/>
+                <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+                <Option type="QString" name="outline_width_unit" value="MM"/>
+                <Option type="QString" name="scale_method" value="diameter"/>
+                <Option type="QString" name="size" value="2"/>
+                <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+                <Option type="QString" name="size_unit" value="MM"/>
+                <Option type="QString" name="vertical_anchor_point" value="1"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol type="marker" name="1" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0" is_animated="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" name="name" value=""/>
+                <Option name="properties"/>
+                <Option type="QString" name="type" value="collection"/>
+              </Option>
+            </data_defined_properties>
+            <layer id="{21a23bfe-bc0f-49e4-b80c-3a935e872303}" class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <Option type="Map">
+                <Option type="QString" name="angle" value="0"/>
+                <Option type="QString" name="cap_style" value="square"/>
+                <Option type="QString" name="color" value="197,185,30,255,hsv:0.15438888888888888,0.84716563668268863,0.77317463950560772,1"/>
+                <Option type="QString" name="horizontal_anchor_point" value="1"/>
+                <Option type="QString" name="joinstyle" value="bevel"/>
+                <Option type="QString" name="name" value="circle"/>
+                <Option type="QString" name="offset" value="0,0"/>
+                <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+                <Option type="QString" name="offset_unit" value="MM"/>
+                <Option type="QString" name="outline_color" value="50,87,128,255,rgb:0.19607843137254902,0.3411764705882353,0.50196078431372548,1"/>
+                <Option type="QString" name="outline_style" value="no"/>
+                <Option type="QString" name="outline_width" value="0.4"/>
+                <Option type="QString" name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+                <Option type="QString" name="outline_width_unit" value="MM"/>
+                <Option type="QString" name="scale_method" value="diameter"/>
+                <Option type="QString" name="size" value="2"/>
+                <Option type="QString" name="size_map_unit_scale" value="3x:0,0,0,0,0,0"/>
+                <Option type="QString" name="size_unit" value="MM"/>
+                <Option type="QString" name="vertical_anchor_point" value="1"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol type="marker" name="0" frame_rate="10" alpha="1" clip_to_extent="1" force_rhr="0" is_animated="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" name="name" value=""/>
+                <Option name="properties"/>
+                <Option type="QString" name="type" value="collection"/>
+              </Option>
+            </data_defined_properties>
+            <layer id="{262ea4af-23e0-48d7-98db-3433a3649508}" class="SimpleMarker" pass="0" enabled="1" locked="0">
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="square"/>
@@ -416,7 +500,10 @@
               </data_defined_properties>
             </layer>
           </symbol>
-        </symbols>
+        </source-symbol>
+        <colorramp type="randomcolors" name="[source]">
+          <Option/>
+        </colorramp>
         <rotation/>
         <sizescale/>
         <data-defined-properties>
@@ -473,6 +560,9 @@
       </selection>
       <customproperties>
         <Option type="Map">
+          <Option type="List" name="dualview/previewExpressions">
+            <Option type="QString" value="&quot;nome&quot;"/>
+          </Option>
           <Option type="int" name="embeddedWidgets/count" value="0"/>
           <Option name="variableNames"/>
           <Option name="variableValues"/>
@@ -869,7 +959,7 @@ def my_form_open(diálogo, camada, feição):
   <Sensors/>
   <ProjectViewSettings UseProjectScales="0" rotation="0">
     <Scales/>
-    <DefaultViewExtent xmax="-27.44772367186384443" ymax="6.08833189959608134" ymin="-34.46784549259439245" xmin="-77.78616522071190786">
+    <DefaultViewExtent xmax="-27.42826293415166106" ymax="6.029949686459533" ymin="-34.52622770573094613" xmin="-77.76670448299972804">
       <spatialrefsys nativeFormat="Wkt">
         <wkt>GEOGCRS["SIRGAS 2000",DATUM["Sistema de Referencia Geocentrico para las AmericaS 2000",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["Latin America - Central America and South America - onshore and offshore. Brazil - onshore and offshore."],BBOX[-59.87,-122.19,32.72,-25.28]],ID["EPSG",4674]]</wkt>
         <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
