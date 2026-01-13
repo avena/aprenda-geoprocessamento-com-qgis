@@ -37,3 +37,11 @@ Permite a criação de regras personalizadas para a simbologia, utilizando expre
   - "campo" IS NOT NULL (para valores não nulos)
   - Combinações usando AND, OR, NOT para criar condições mais complexas.  
     Exemplo: "população" > 1000 AND "área" < 50
+
+## Simbologia de Deslocar de Pontos
+
+Utilizada para deslocar símbolos de pontos em relação ao seu local original. Útil para evitar sobreposição de símbolos em áreas densamente populadas ou para criar efeitos visuais específicos.
+Em aglomerados de pontos, onde não sei quantos pontos existem, o deslocamento ajuda a visualizar todos os pontos sem sobreposição. Criando um ponto central e a partir deste ponto, espalha os outros pontos ao redor, em torno de um raio, facilitando a visualização dos dados.
+
+- Desloca símbolos de pontos.
+  Na Camada, clicar com o botão direito > Propriedades > Simbologia > Selecionar "Deslocar de Pontos" no menu suspenso > Vai ter o Centro do Simbolo > Escolher o tipo de Desenhar (ex: Simbolo Simples) > Definir os valores de deslocamento (X e Y) > Clicar em "OK" para aplicar.
